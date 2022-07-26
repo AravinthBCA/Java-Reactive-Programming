@@ -1,4 +1,4 @@
-package appl.controller;
+package ProductService.Controller;
 
 import java.time.Duration;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import appl.dto.ProductDto;
-import appl.service.ProductService;
+import ProductService.Dto.ProductDto;
+import ProductService.Service.ProductService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

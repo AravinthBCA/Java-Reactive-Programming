@@ -1,11 +1,11 @@
-package appl.repository;
+package ProductService.Repository;
 
 import org.springframework.data.domain.Range;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.stereotype.Repository;
 
-import appl.entity.Product;
+import ProductService.Entity.Product;
 import reactor.core.publisher.Flux;
 
 @Repository

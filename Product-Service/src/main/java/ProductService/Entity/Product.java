@@ -1,4 +1,6 @@
-package appl.dto;
+package ProductService.Entity;
+
+import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,14 +11,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ProductDto {
+public class Product {
 	
+	@Id
 	private String id;
 	private String description;
 	private Integer price;
 	
-	public ProductDto(String description, Integer price) {
-		this.description = description;
-		this.price = price;
-	}
 }

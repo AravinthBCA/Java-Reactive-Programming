@@ -1,12 +1,12 @@
-package appl.service;
+package ProductService.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Range;
 import org.springframework.stereotype.Service;
 
-import appl.dto.ProductDto;
-import appl.repository.ProductRepository;
-import appl.util.EntityDtoUtil;
+import ProductService.Dto.ProductDto;
+import ProductService.Repository.ProductRepository;
+import ProductService.Util.EntityDtoUtil;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

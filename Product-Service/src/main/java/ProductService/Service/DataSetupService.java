@@ -1,4 +1,4 @@
-package appl.service;
+package ProductService.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

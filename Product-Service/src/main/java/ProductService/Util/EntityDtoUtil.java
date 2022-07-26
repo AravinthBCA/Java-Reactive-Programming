@@ -1,9 +1,9 @@
-package appl.util;
+package ProductService.Util;
 
 import org.springframework.beans.BeanUtils;
 
-import appl.dto.ProductDto;
-import appl.entity.Product;
+import ProductService.Dto.ProductDto;
+import ProductService.Entity.Product;
 
 public class EntityDtoUtil {
 	
