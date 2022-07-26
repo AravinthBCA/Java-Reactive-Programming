@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import UserService.Dto.TransactionRequestDto;
-import UserService.Dto.TransactionResponse;
+import UserService.Dto.TransactionResponseDto;
 import UserService.Dto.TransactionStatus;
 import UserService.Entity.UserTransaction;
 import UserService.Repository.UserRepository;
@@ -22,7 +22,7 @@ public class TransactionService {
 	@Autowired
 	private UserTransactionRepository userTRepo;
 	
-	public Mono<TransactionResponse> createTransaction(final TransactionRequestDto requestDto){
+	public Mono<TransactionResponseDto> createTransaction(final TransactionRequestDto requestDto){
 		return this.userRepo.updateUserBalance(requestDto.getUserId(), requestDto.getAmount())
 					 		.filter(Boolean::booleanValue)
 					 		.map(b -> EntityDtoUtil.toEntity(requestDto))

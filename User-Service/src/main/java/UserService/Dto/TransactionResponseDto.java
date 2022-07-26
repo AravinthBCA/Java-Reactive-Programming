@@ -9,7 +9,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class TransactionResponse {
+public class TransactionResponseDto {
 
 	private Integer userId;
 	private Integer amount;

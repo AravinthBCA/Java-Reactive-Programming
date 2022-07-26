@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import org.springframework.beans.BeanUtils;
 
 import UserService.Dto.TransactionRequestDto;
-import UserService.Dto.TransactionResponse;
+import UserService.Dto.TransactionResponseDto;
 import UserService.Dto.TransactionStatus;
 import UserService.Dto.UserDto;
 import UserService.Entity.User;
@@ -33,8 +33,8 @@ public class EntityDtoUtil {
 		return ut;
 	}
 	
-	public static TransactionResponse toDto(TransactionRequestDto tDto,TransactionStatus tStatus) {
-		TransactionResponse dto = new TransactionResponse();
+	public static TransactionResponseDto toDto(TransactionRequestDto tDto,TransactionStatus tStatus) {
+		TransactionResponseDto dto = new TransactionResponseDto();
 		dto.setAmount(tDto.getAmount());
 		dto.setUserId(tDto.getUserId());
 		dto.setStatus(tStatus);

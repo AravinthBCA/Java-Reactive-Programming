@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import UserService.Dto.TransactionRequestDto;
-import UserService.Dto.TransactionResponse;
+import UserService.Dto.TransactionResponseDto;
 import UserService.Entity.UserTransaction;
 import UserService.Service.TransactionService;
 import reactor.core.publisher.Flux;
@@ -23,7 +23,7 @@ public class TransactionController {
 	private TransactionService tService;
 	
 	@PostMapping
-	public Mono<TransactionResponse> createTransaction(@RequestBody Mono<TransactionRequestDto> tDto){
+	public Mono<TransactionResponseDto> createTransaction(@RequestBody Mono<TransactionRequestDto> tDto){
 		return tDto.flatMap(this.tService::createTransaction);
 	}
 	
