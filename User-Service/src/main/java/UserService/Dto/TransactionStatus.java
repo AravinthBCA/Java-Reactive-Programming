@@ -1,4 +1,4 @@
-package Appl.dto;
+package UserService.Dto;
 
 public enum TransactionStatus {
 	

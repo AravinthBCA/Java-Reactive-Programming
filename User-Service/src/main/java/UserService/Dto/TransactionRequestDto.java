@@ -1,4 +1,4 @@
-package Appl.dto;
+package UserService.Dto;
 
 import lombok.Data;
 import lombok.ToString;

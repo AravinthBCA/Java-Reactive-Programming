@@ -1,4 +1,4 @@
-package Appl.service;
+package UserService.Service;
 
 import java.nio.charset.StandardCharsets;
 

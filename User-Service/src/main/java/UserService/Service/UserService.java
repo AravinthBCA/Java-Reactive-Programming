@@ -1,11 +1,11 @@
-package Appl.service;
+package UserService.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Appl.dto.UserDto;
-import Appl.repository.UserRepository;
-import Appl.util.EntityDtoUtil;
+import UserService.Dto.UserDto;
+import UserService.Repository.UserRepository;
+import UserService.Util.EntityDtoUtil;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

@@ -1,4 +1,4 @@
-package Appl.entity;
+package UserService.Entity;
 
 import java.time.LocalDateTime;
 

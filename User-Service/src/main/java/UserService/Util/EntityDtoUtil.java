@@ -1,15 +1,15 @@
-package Appl.util;
+package UserService.Util;
 
 import java.time.LocalDateTime;
 
 import org.springframework.beans.BeanUtils;
 
-import Appl.dto.TransactionRequestDto;
-import Appl.dto.TransactionResponse;
-import Appl.dto.TransactionStatus;
-import Appl.dto.UserDto;
-import Appl.entity.User;
-import Appl.entity.UserTransaction;
+import UserService.Dto.TransactionRequestDto;
+import UserService.Dto.TransactionResponse;
+import UserService.Dto.TransactionStatus;
+import UserService.Dto.UserDto;
+import UserService.Entity.User;
+import UserService.Entity.UserTransaction;
 
 public class EntityDtoUtil {
 	

@@ -1,11 +1,11 @@
-package Appl.repository;
+package UserService.Repository;
 
 import org.springframework.data.r2dbc.repository.Modifying;
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
 
-import Appl.entity.User;
+import UserService.Entity.User;
 import reactor.core.publisher.Mono;
 
 @Repository
